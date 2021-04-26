@@ -1,5 +1,12 @@
-# Задание Номер 2
-a = ['Privet', None, True, 1232]
-for i in range(0, len(a), 2):
-    a[i], a[i + 1] = a[i + 1], a[i]
-print(a)
+# объявление функции
+def merge(list1, list2):
+    a = list1 + list2
+    a.sort()
+    return a
+
+# считываем данные
+numbers1 = [int(c) for c in input().split()]
+numbers2 = [int(c) for c in input().split()]
+
+# вызываем функцию
+print(merge(numbers1, numbers2))
